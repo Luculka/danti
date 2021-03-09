@@ -1,19 +1,23 @@
 {
   "name": "danti",
   "version": "1.0.0",
-  "main": "eleventy.js",
-  "dependencies": {
-    "lightbox2": "^2.11.3"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
-  },
+  "description": "",
+  "main": ".eleventy.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luculka/danti.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/Luculka/danti/issues"
+  },
+  "homepage": "https://github.com/Luculka/danti#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
 }
