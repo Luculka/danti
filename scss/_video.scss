@@ -1,0 +1,28 @@
+.videos {
+    background-color: black;
+}
+
+.video_grid__item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    // overflow:hidden;
+}
+
+.video_grid {
+    margin: 20px;
+    position: relative;
+    // width: 100%;
+    // padding-bottom: 56.25%; 
+    // height: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+.video_grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+}

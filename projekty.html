@@ -1,4 +1,65 @@
---- 
+---
 layout: layouts/base
 title: Projekty
---- 
+---
+
+<div class="projects">
+  <div class="project_item" data-tilt>
+    <a class="project_item__overlay" href="/projekty/projekt-hydra/"></a>
+    <h1 class="project_item__title">Projekt Hydra</h1>
+    <p class="project_item__description">
+      Hydra je neziskový projekt, který vznikl za&nbsp;cílem propagace meteorologie a&nbsp;klimatologie na&nbsp;Facebooku. Tým Hydry tvoří několik profesionálních
+      meteorologů z&nbsp;dlouholetou praxí v&nbsp;oblasti synoptické či&nbsp;letecké
+      meteorologie. Ve&nbsp;spolupráci s&nbsp;Danti media vznikají i&nbsp;videa na&nbsp;téma příroda
+      a&nbsp;počasí. Zajímavé odborné články naleznete exkluzivně na&nbsp;tomto webu.
+    </p>
+    <a class="article__more button" href="/projekty/projekt-hydra/"
+      >Přejít na články</a
+    >
+  </div>
+
+  <div class="project_item vzdelavani" data-tilt>
+    <a class="project_item__overlay" href="#" onclick="toggle();"></a>
+    <h1 class="project_item__title">Vzdělávání</h1>
+    <p class="project_item__description">
+      V rámci zvyšování povědomí Odboru letecké meteorologie (OLM) probíhají pro
+      studenty i&nbsp;pro širokou veřejnost přednášky na&nbsp;téma letecké meteorologie.
+      Posluchači se netradiční formou podívají do&nbsp;zákulisí českých letišť, dozví
+      se, jak se tvoří předpovědi počasí, jak se&nbsp;kóduje meteorologické
+      zpravodajství pro letištní personál, jaká jsou hlavní meteorologická
+      rizika letecké dopravy a&nbsp;mnoho dalších zajímavostí. Přednášky probíhají
+      osobně nebo online. V&nbsp;případě zájmu o&nbsp;přednášku, můžete využít
+      <a class="link" href="/kontakt/">kontaktní formulář</a>.
+    </p>
+  </div>
+  <div class="video_vzdelavani">
+    <video src="/images/Vzdělání.mp4" autoplay muted loop></video>
+    <img src="/images/close.png" onclick="toggle();" class="close" />
+  </div>
+
+  <div class="project_item" data-tilt>
+    <a
+      class="project_item__overlay"
+      href="/images/Ze zivota bourek.jpg"
+      data-lightbox="bourky"
+    ></a>
+    <h1 class="project_item__title">Ze života bouřek</h1>
+    <p class="project_item__description">
+      Ze&nbsp;života bouřek je mediální neziskový projekt s&nbsp;cílem seznámit veřejnost
+      s&nbsp;nejnebezpečnějším meteorologickým jevem na&nbsp;území České republiky. Na&nbsp;      projektu spolupracuje Český hydrometeorologický ústav a Amatérská
+      meteorologická společnost. Jedná se o&nbsp;prezentaci bouřkových jevů široké
+      veřejnosti pomocí kamerové techniky s&nbsp;odborným vysvětlením
+      meteorologických expertů. Diváci se dozvědí, jak vznikají bouřky, jak se&nbsp;      dají předpovědět, jaký je přínos tzv. lovu bouřek a&nbsp;co je jejich hlavním
+      nebezpečím.
+    </p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function toggle() {
+    let vzdelavani = document.querySelector(".video_vzdelavani");
+    vzdelavani.classList.toggle("active");
+  }
+</script>
+<script src="tilt.jquery.js"></script>
+</body>

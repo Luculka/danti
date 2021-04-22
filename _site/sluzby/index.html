@@ -13,49 +13,64 @@
 
     <title>Danti Media</title>
   </head>
-
-  <header>
-    <div class="logo"> <a href="/">
-      <img src="/images/Logo bez pozadí.png" alt="logo" /></a>
-    </div>
-    <nav class="navbar">
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li class="menu__item"><a href="/video/">Video</a></li>
-          <li class="menu__item"><a href="/foto/">Foto</a></li>
-          <li class="menu__item"><a href="/sluzby/">Služby</a></li>
-          <li class="menu__item"><a href="/projekty/">Projekty</a></li>
-        </ul>
+  <header class="header">
+    <div class="navigation">
+      <div class="logo">
+        <a href="/"> <img src="/images/Logo bez pozadí.png" alt="logo" /></a>
       </div>
-    </nav>
-    <div class="social-media">
-      <a
-        href="https://www.youtube.com/channel/UC0tY_Xz3L5yRD7u7fAxNP7Q"
-        target="_blank"
-        ><i class="fab fa-youtube"></i
-      ></a>
-      <a href="https://www.facebook.com/groups/airmeteo" target="_blank"
-        ><i class="fab fa-facebook"></i
-      ></a>
-      <a href="https://www.instagram.com/dantimedia/" target="_blank"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <nav class="navbar">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li class="menu__item"><a href="/video/">Video</a></li>
+            <li class="menu__item"><a href="/foto/">Foto</a></li>
+            <!-- <li class="menu__item"><a href="/sluzby/">Služby</a></li> -->
+            <li class="menu__item"><a href="/projekty/">Projekty</a></li>
+            <li class="menu__item"><a href="/kontakt/">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="social-media">
+        <a
+          href="https://www.youtube.com/channel/UC0tY_Xz3L5yRD7u7fAxNP7Q"
+          target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://www.facebook.com/groups/airmeteo" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/dantimedia/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
   </header>
 
-  <body>
+  <body></body>
+</html>
+
 
 <main>
      
+
 </main>
 
 
+<script>window.addEventListener('load', async () => {
+  let video = document.querySelector('video[muted][autoplay]');
+  try {
+    await video.play();
+  } catch (err) {
+    video.controls = true;
+  }
+});
+</script>
 <script>
     const toggleButton = document.getElementsByClassName("toggle-button")[0];
     const navbarLinks = document.getElementsByClassName("navbar-links")[0];
@@ -72,5 +87,6 @@ lightGallery(document.getElementById('lightgallery'), {
 })
   </script>
   <script src="https://kit.fontawesome.com/30fc0982d8.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 </html>

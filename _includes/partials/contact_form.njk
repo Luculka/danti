@@ -1,0 +1,75 @@
+  <!-- sekce kontakt -->
+  <section>
+    <a id="kontakt"></a>
+    <div class="contact">
+      <div class="contact__form">
+        <h2>Kontaktní formulář</h2>
+        <p>
+          Máte zájem o nějaký z výše uvedených služeb? Stačí si vybrat téma a odeslat svůj kontakt. Obratem Vás budeme kontaktovat.
+        </p>
+        <form action="" method="POST" class="contact_form__box">
+          <div class="form-field">
+            <label for="jmeno">Jméno a příjmení *</label>
+            <input type="text" name="jmeno" id="jmeno" required />
+          </div>
+  
+          <div class="form-field">
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+  
+          <div class="form-field">
+            <label for="theme">Vyberte téma</label>
+            <select id="theme" name="tema" form="selectform">
+            <option value="select_prednaska">Přednášky o meteorologii pro studenty i pro širokou veřejnost</option>
+            <option value="select_clanek">Odborné články především z oblasti meteorologie</option>
+            <option value="select_konzultace">Meteorologické či klimatické konzultace</option>
+            <option value="select_foto">Focení přírodních a meteorologických jevů</option>
+            <option value="select_video">Natáčení a stříhání videa v ultra HD kvalitě na téma meteorologie, příroda, památky, akce,
+              propagace a cestování</option>
+            </select>
+          </div>
+  
+          <div class="form-field">
+            <label for="zprava">Zpráva</label>
+            <textarea name="zprava" id="name" rows="5"></textarea>
+          </div>
+          <button type="submit" class="button send__button">Odeslat</button>
+        </form>
+      </div>
+      <div class="contact__info">
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fas fa-envelope"></i></span
+            >danek.tomaso@gmail.com
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-phone-square-alt"></i></span>+420
+            123 456 789
+          </li>
+        </ul>
+        <ul class="contact__social-media">
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UC0tY_Xz3L5yRD7u7fAxNP7Q"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/groups/airmeteo" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/dantimedia/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>

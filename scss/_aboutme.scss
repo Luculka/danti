@@ -1,0 +1,70 @@
+.aboutme {
+background-color: $background-color;
+color: $text-color-form;
+    margin: 30px;
+    max-width: 100vw;
+    padding-top: 50px;
+    font-size: 18px;
+}
+
+.aboutme__description {
+    text-align: justify;
+}
+
+.aboutme__title {
+    position: relative;
+    color: $text-color;
+}
+.aboutme__title::after{
+    content: "";
+    display: block;
+    border-bottom: solid 1px $text-color;
+    width: 100%;
+}
+
+.aboutme ul {
+    list-style-type: circle;
+}
+
+.gradient {
+    height: 100px;
+    background: linear-gradient($background-color, rgb(197,172,165)) 
+}
+
+
+@media screen and (min-width: 1058px) {
+    // .parallax {
+    //     background-image: url("/images/Image-parallax.jpg");
+    //     min-height: 200px;
+    //     background-attachment: fixed;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+    .aboutme {
+        margin: 0px auto;
+        max-width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    .aboutme__title {
+        flex-basis: 100%;
+    }
+    .aboutme__description,
+    .aboutme__themes,
+    .aboutme__title {
+        padding: 20px;
+    }
+    .aboutme__description {
+        flex-basis: 55%;
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .aboutme__themes {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,120 @@
+.contact__info li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.fas {
+  display: flex;
+}
+.contact__social-media {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  margin: 10px auto;
+}
+
+.contact__social-media .fab {
+  color: $icon-color-form;
+}
+
+.contact__form {
+  background-color: #f7f6f4;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea,
+select {
+  background-color: $text-color-form;
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+  border-radius: 4px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+select {
+  min-height: 50px;
+  font-size: 16px;
+}
+
+.form-field textarea {
+  min-height: 120px;
+}
+
+
+  .contact {
+    background: url("../images/blesk2.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+  label {
+    color: $text-color-form;
+  }
+  .contact__info {
+    margin: 10px 10px;
+    // background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    color: $text-color-form;
+    align-self: center;
+    width: auto;
+    padding: 15px 30px;
+    line-height: 65px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    border-radius: 10px;
+  }
+
+  .contact__form {
+    margin: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    color: $text-color-form;
+    padding: 20px 30px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+.contact__social-media .fab:hover {
+        transform: scale(1.2);
+    
+}
+  .fas {
+    position: relative;
+    line-height: 65px;
+    margin-right: 20px;
+    color: $icon-color-form;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+@media (min-width: 968px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__info {
+    margin-bottom: 200px;
+  }
+  .contact__form {
+    width: 30%;
+    height: 80%;
+    margin-top: 40px;
+    margin-right: 80px;
+  }
+
+  .form-field input[type="text"],
+.form-field input[type="email"],
+select {
+  font-size: 18px;
+}
+}

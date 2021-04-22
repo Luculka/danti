@@ -13,49 +13,124 @@
 
     <title>Danti Media</title>
   </head>
-
-  <header>
-    <div class="logo"> <a href="/">
-      <img src="/images/Logo bez pozadí.png" alt="logo" /></a>
-    </div>
-    <nav class="navbar">
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li class="menu__item"><a href="/video/">Video</a></li>
-          <li class="menu__item"><a href="/foto/">Foto</a></li>
-          <li class="menu__item"><a href="/sluzby/">Služby</a></li>
-          <li class="menu__item"><a href="/projekty/">Projekty</a></li>
-        </ul>
+  <header class="header">
+    <div class="navigation">
+      <div class="logo">
+        <a href="/"> <img src="/images/Logo bez pozadí.png" alt="logo" /></a>
       </div>
-    </nav>
-    <div class="social-media">
-      <a
-        href="https://www.youtube.com/channel/UC0tY_Xz3L5yRD7u7fAxNP7Q"
-        target="_blank"
-        ><i class="fab fa-youtube"></i
-      ></a>
-      <a href="https://www.facebook.com/groups/airmeteo" target="_blank"
-        ><i class="fab fa-facebook"></i
-      ></a>
-      <a href="https://www.instagram.com/dantimedia/" target="_blank"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <nav class="navbar">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li class="menu__item"><a href="/video/">Video</a></li>
+            <li class="menu__item"><a href="/foto/">Foto</a></li>
+            <!-- <li class="menu__item"><a href="/sluzby/">Služby</a></li> -->
+            <li class="menu__item"><a href="/projekty/">Projekty</a></li>
+            <li class="menu__item"><a href="/kontakt/">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="social-media">
+        <a
+          href="https://www.youtube.com/channel/UC0tY_Xz3L5yRD7u7fAxNP7Q"
+          target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://www.facebook.com/groups/airmeteo" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/dantimedia/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
   </header>
 
-  <body>
+  <body></body>
+</html>
+
 
 <main>
-     
+    
+<div class="projects">
+  <div class="project_item" data-tilt>
+    <a class="project_item__overlay" href="/projekty/projekt-hydra/"></a>
+    <h1 class="project_item__title">Projekt Hydra</h1>
+    <p class="project_item__description">
+      Hydra je neziskový projekt, který vznikl za&nbsp;cílem propagace meteorologie a&nbsp;klimatologie na&nbsp;Facebooku. Tým Hydry tvoří několik profesionálních
+      meteorologů z&nbsp;dlouholetou praxí v&nbsp;oblasti synoptické či&nbsp;letecké
+      meteorologie. Ve&nbsp;spolupráci s&nbsp;Danti media vznikají i&nbsp;videa na&nbsp;téma příroda
+      a&nbsp;počasí. Zajímavé odborné články naleznete exkluzivně na&nbsp;tomto webu.
+    </p>
+    <a class="article__more button" href="/projekty/projekt-hydra/"
+      >Přejít na články</a
+    >
+  </div>
+
+  <div class="project_item vzdelavani" data-tilt>
+    <a class="project_item__overlay" href="#" onclick="toggle();"></a>
+    <h1 class="project_item__title">Vzdělávání</h1>
+    <p class="project_item__description">
+      V rámci zvyšování povědomí Odboru letecké meteorologie (OLM) probíhají pro
+      studenty i&nbsp;pro širokou veřejnost přednášky na&nbsp;téma letecké meteorologie.
+      Posluchači se netradiční formou podívají do&nbsp;zákulisí českých letišť, dozví
+      se, jak se tvoří předpovědi počasí, jak se&nbsp;kóduje meteorologické
+      zpravodajství pro letištní personál, jaká jsou hlavní meteorologická
+      rizika letecké dopravy a&nbsp;mnoho dalších zajímavostí. Přednášky probíhají
+      osobně nebo online. V&nbsp;případě zájmu o&nbsp;přednášku, můžete využít
+      <a class="link" href="/kontakt/">kontaktní formulář</a>.
+    </p>
+  </div>
+  <div class="video_vzdelavani">
+    <video src="/images/Vzdělání.mp4" autoplay muted loop></video>
+    <img src="/images/close.png" onclick="toggle();" class="close" />
+  </div>
+
+  <div class="project_item" data-tilt>
+    <a
+      class="project_item__overlay"
+      href="/images/Ze zivota bourek.jpg"
+      data-lightbox="bourky"
+    ></a>
+    <h1 class="project_item__title">Ze života bouřek</h1>
+    <p class="project_item__description">
+      Ze&nbsp;života bouřek je mediální neziskový projekt s&nbsp;cílem seznámit veřejnost
+      s&nbsp;nejnebezpečnějším meteorologickým jevem na&nbsp;území České republiky. Na&nbsp;      projektu spolupracuje Český hydrometeorologický ústav a Amatérská
+      meteorologická společnost. Jedná se o&nbsp;prezentaci bouřkových jevů široké
+      veřejnosti pomocí kamerové techniky s&nbsp;odborným vysvětlením
+      meteorologických expertů. Diváci se dozvědí, jak vznikají bouřky, jak se&nbsp;      dají předpovědět, jaký je přínos tzv. lovu bouřek a&nbsp;co je jejich hlavním
+      nebezpečím.
+    </p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function toggle() {
+    let vzdelavani = document.querySelector(".video_vzdelavani");
+    vzdelavani.classList.toggle("active");
+  }
+</script>
+<script src="tilt.jquery.js"></script>
+</body>
+
 </main>
 
 
+<script>window.addEventListener('load', async () => {
+  let video = document.querySelector('video[muted][autoplay]');
+  try {
+    await video.play();
+  } catch (err) {
+    video.controls = true;
+  }
+});
+</script>
 <script>
     const toggleButton = document.getElementsByClassName("toggle-button")[0];
     const navbarLinks = document.getElementsByClassName("navbar-links")[0];
@@ -72,5 +147,6 @@ lightGallery(document.getElementById('lightgallery'), {
 })
   </script>
   <script src="https://kit.fontawesome.com/30fc0982d8.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 </html>
