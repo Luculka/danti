@@ -378,14 +378,6 @@ h2 {
   cursor: pointer;
 }
 
-.project_item__overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
 .project_item__description a {
   pointer-events: all;
   position: relative;
@@ -393,7 +385,11 @@ h2 {
 
 @media screen and (min-width: 1058px) {
   .project_item__overlay {
-    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
   .projects {
     margin: 50px 150px;
@@ -612,20 +608,18 @@ h2 {
   padding: 30px;
 }
 
-.parallax {
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .parallax_odpadky {
   background-image: url("/images/clanky/Clanek_odpadky.jpg");
 }
 
 .parallax_predpovedi {
-  background-image: url("/images/clanky/Clanek_sezonni predpovedi.jpg");
+  background-image: url("/images/clanky/small/Clanek_sezonni_predpovedi.jpg");
+}
+
+.parallax {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1058px) {
@@ -638,6 +632,16 @@ h2 {
   }
   .parallax {
     min-height: 400px;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax_odpadky {
+    background-image: url("/images/clanky/Clanek_odpadky.jpg");
+  }
+  .parallax_predpovedi {
+    background-image: url("/images/clanky/Clanek_sezonni_predpovedi.jpg");
   }
 }
 

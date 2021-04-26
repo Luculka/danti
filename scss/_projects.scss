@@ -58,14 +58,6 @@
     cursor: pointer;
 }
 
-.project_item__overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
-
 
 .project_item__description a {
     pointer-events: all;
@@ -73,9 +65,18 @@
 }
 
 @media screen and (min-width: 1058px) {
+    // .project_item__overlay {
+    //     display: block;
+    // }
+
     .project_item__overlay {
-        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
     }
+
     .projects {    
         margin: 50px 150px;
         display: flex !important;
