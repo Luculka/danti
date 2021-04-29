@@ -3,6 +3,10 @@
     padding: 30px;
 }
 
+.article__item h1 {
+    line-height: 2.5;
+}
+
 
 .parallax_odpadky {
     background-image: url("/images/clanky/Clanek_odpadky.jpg");
@@ -17,6 +21,8 @@
     background-position: center;
     background-size: cover;
 }
+
+
 
 
 @media screen and (min-width: 1058px) {
