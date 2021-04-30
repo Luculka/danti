@@ -20,6 +20,7 @@
 .navbar-links li a {
   text-decoration: none;
   color: $text-color;
+  font-size: 24px;
   // -webkit-text-stroke: 0.5px black;
   // text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   // text-shadow:
@@ -85,7 +86,8 @@
     text-align: center;
   }
 
-  .navbar-links li a {
+  .menu__item a {
+    display: block;
     padding: 0.5rem 1rem;
   }
 
@@ -103,6 +105,7 @@
 }
 
 @media (min-width: 960px) {
+
   header .header_video {
     // width: 100%;
     display: flex;
@@ -133,7 +136,8 @@
     height: 100vh;
   }
   .video_background {
-    display: block;
+    display: relative;
+    background-color: $background-color;
   } 
 
   .video_foreground,
@@ -145,36 +149,8 @@
     height: 100%;
     pointer-events: none;
     object-fit: cover;
+    overflow: hidden;
   }
-
-
-  }
-  @media (min-aspect-ratio: 16/9) {
-    .video_foreground {
-      height: 300%;
-      top: -100%;
-    }
-  }
-  @media (max-aspect-ratio: 16/9) {
-    .video_foreground {
-      width: 300%;
-      left: -100%;
-    }
-  }
-
-  //   .video_background {
-  //     position: fixed;
-  //     top: 0;
-  //     left: 0;
-  //     bottom: 0;
-  //     right: 0;
-  //     width: 100vw;
-  //     max-height: 100vh;
-  //     object-fit: cover;
-  //     pointer-events: none;
-  //     z-index: -999;
-  //     overflow-x: hidden;
-  // }
   .navigation_video {
     position: absolute;
     top: 0;
@@ -189,7 +165,8 @@
     // padding: 0 10px;
   }
 
-  .navigation {
+  .navigation,
+  .navigation_video {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -218,6 +195,35 @@
     margin-right: 50px;
     opacity: 0.6;
   }
+
+  }
+  @media (min-aspect-ratio: 16/9) {
+    .video_foreground {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video_foreground {
+      width: 300%;
+      left: -100%;
+    }
+  }
+
+  //   .video_background {
+  //     position: fixed;
+  //     top: 0;
+  //     left: 0;
+  //     bottom: 0;
+  //     right: 0;
+  //     width: 100vw;
+  //     max-height: 100vh;
+  //     object-fit: cover;
+  //     pointer-events: none;
+  //     z-index: -999;
+  //     overflow-x: hidden;
+  // }
+
 
 
 // @media (min-aspect-ratio: 16/9) {

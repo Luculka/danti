@@ -10,6 +10,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <title>Danti Media</title>
     <link rel="shortcut icon" href="/images/favicon.ico">
@@ -86,6 +91,60 @@ lightGallery(document.getElementById('lightgallery'), {
   cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
 })
   </script>
+  <script type="text/javascript">
+  var header_video = document.getElementById("header_video")
+  window.addEventListener("scroll", function(){
+    header_video.style.opacity = 1 - +window.pageYOffset/600+""
+    header_video.style.top = +window.pageYOffset+"px"
+    header_video.style.backgroundPositionY = +window.pageYOffset/2+"px"
+    })</script>
   <script src="https://kit.fontawesome.com/30fc0982d8.js"></script>
+  <script>
+    /*
+     * Light YouTube Embeds by @labnol
+     * Credit: https://www.labnol.org/
+     */
+  
+    function labnolIframe(div) {
+      var iframe = document.createElement('iframe');
+      iframe.setAttribute(
+        'src',
+        'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1&rel=0'
+      );
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allowfullscreen', '1');
+      iframe.setAttribute(
+        'allow',
+        'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+      );
+      div.parentNode.replaceChild(iframe, div);
+    }
+  
+    function initYouTubeVideos() {
+      var playerElements = document.getElementsByClassName('youtube-player');
+      for (var n = 0; n < playerElements.length; n++) {
+        var videoId = playerElements[n].dataset.id;
+        var div = document.createElement('div');
+        div.setAttribute('data-id', videoId);
+        var thumbNode = document.createElement('img');
+        thumbNode.src = '//i.ytimg.com/vi/ID/hqdefault.jpg'.replace(
+          'ID',
+          videoId
+        );
+        div.appendChild(thumbNode);
+        var playButton = document.createElement('div');
+        playButton.setAttribute('class', 'play');
+        div.appendChild(playButton);
+        div.onclick = function () {
+          labnolIframe(this);
+        };
+        playerElements[n].appendChild(div);
+      }
+    }
+  
+    document.addEventListener('DOMContentLoaded', initYouTubeVideos);
+  </script>
 </body>
 </html>
+
+<footer class="footer">@2021 | Lucie Trojanová | trojanova33@gmail.com</footer>
